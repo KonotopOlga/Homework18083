@@ -7,9 +7,9 @@
 //Сравниваем все элементы массива.
 //Выводим на экран разность.
 
-Double [] GetArray(int size, int minValue, int maxValue)
+double [] GetArray(int size, int minValue, int maxValue)
 {
-    Double [] res = new double [size];
+    double [] res = new double [size];
     for(int i = 0; i < size; i++)
     {
         res[i] = new Random().Next(minValue, maxValue + 1);
@@ -23,7 +23,7 @@ Double [] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
-double [] array = GetArray(7, 45, 98);
+double [] array = GetArray(3, 55, 99);
 Console.WriteLine();
 
 double maxNumber = array[0];
